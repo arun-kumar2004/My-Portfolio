@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+.portfolio-container{
+    /* display: flex; */
+    /* height: 100vh; */
+    width: 100%;
+
+}
+
+
+
+.navlist-container{
+    height: 100vh;
+    width: 100%;
+}
+
+.navlist{
+   display: flex;
+   background-color: #f8aee0;
+   gap: 3rem;
+   list-style-type: none; 
+   justify-content:center ;  
+   align-items: center;
+   height: 9vh;
+   width: 100%;
+   /* position:fixed; */
+}
+
+.navlist a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 1000;
+    position: relative;
+}
+
+.navlist li a::after, .navlist.active::after{
+    content: "";
+    position: absolute;
+    background-color: blue;
+    width: 100%;
+    height: 0.1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+
+}
+.navlist li a:hover::after, .navlist .active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.left-container{
+    width: 70%;
+    background-color: rgb(189, 235, 187);
+    display: flex;
+    float: left;
+    
+    
+}
+.right-container{
+    width: 30%;
+    background-color:rgb(143, 236, 143);
+    float: right;
+}
+
+.left-container,.right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+    
+
+}
+.icons .fa-brands {
+    color: #044691;
+    size: 2rem;
+
+}
+
+  .icons{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background-color: #5db9ee;
+}
+
+.info-container{
+   margin-left: 3rem;
+   width: 60%;
+}
+
+ .info-container h1{
+  font-size: 3rem;
+  color:blue
+}
+
+.info-container h2 span{
+ font-size: 1.5rem;
+  color: #ee9715;
+}/*
+.info-container p{
+  font-size: 20px;
+} */
+
+.btn button{
+    margin-top: 1rem;
+    border: .1rem solid #5db9ee;
+    padding: 0.8rem 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+}
+
+button:nth-child(1) {
+ background-color: #5db9ee;
+}
+button:nth-child(2){
+    background-color: transparent;
+    color: #79bce2;
+    margin-left: 2rem;
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: #5db9ee;
+}
+button:nth-child(2):hover{
+    background: #f0e358;
+    color: #5db9ee;
+}
+
+.design .circle{
+    /* background-color: black; */
+    border-radius: 50%;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+  
+}
+
+.circle:nth-child(1){
+    background:linear-gradient(90deg,transparent 50%,rgb(189, 235, 187) 50%);
+    
+    width: 30rem;
+
+}
+.circle:nth-child(2){
+    background-image: url("Arun\ Kumar.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;    
+    width: 23rem;
+    border: .3rem solid rgb(211, 111, 111);
+}
+
+/* .about-container p{
+    width: 100%;
+    margin-left: 2rem;
+    padding: 10rem;
+    
+} */
+ .para-container{
+    margin: 1rem;
+    margin-left: 2rem;
+    padding: 2re;
+ }
+.about-container h1{
+    text-align: center; 
+    margin: 4rem 0rem;   
+    
+}
+.about-container span{
+    color: rgb(45, 0, 128);
+    font-weight: 600;
+}
+
+/* #abt{
+    width: 100%;
+    margin-left: 12rem;
+    justify-content: right;
+    align-items: right;
+} */
+
+
+.project{
+    margin: 2rem;
+    padding: 2rem;
+    /* justify-content: center; */
+}
+
+.project h1{
+    text-align: center;
+    padding: 4rem;
+}
+.proj{
+    width: 80%;
+    border: 0.1rem solid #ddd;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    overflow: hidden;
+    background-color:aqua;
+    /* justify-content:; */
+}
+
+  
+ 
+.cont-container h1{
+ text-align: center;
+ padding: 3rem;
+ /* background-color: black; */
+}
+
+.cont-container h4{
+    text-align: center;
+    padding: .5rem;
+    font-weight: 700;
+}
+ .cont-container span{
+    color: blueviolet;
+    font-weight: 800;
+}
+
+.footr{
+    background-color: red;
+    color: #beccd4;
+    height: 2.5rem;
+    text-align: center;
+   padding: .5rem;
+   margin-top: 3rem;
+   font-weight: 800; 
+}
+.footr span{
+    color: #dac8a2d5;
+}
